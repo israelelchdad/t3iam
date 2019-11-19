@@ -1,1 +1,17 @@
-<p>posts works!</p>
+<div>
+
+     <h1>select a post (click)</h1>
+
+     <ul>
+         <li *ngFor= "let p of posts">
+               
+             <app-item-post [post]="p"></app-item-post>
+
+              <!-- {{p.title}} <br>
+                {{p.body}} <br> -->
+
+
+         </li>
+     </ul>
+
+</div>

@@ -10,6 +10,8 @@ import { TodosComponent } from './comps/panels/todos/todos.component';
 import { PostsComponent } from './comps/panels/posts/posts.component';
 import { AlbumsComponent } from './comps/panels/albums/albums.component';
 import { TodoComponent } from './comps/items/todo/todo.component';
+import { ItemPostComponent } from './comps/items/item-post/item-post.component';
+import { ItemAlbumComponent } from './comps/items/item-album/item-album.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { TodoComponent } from './comps/items/todo/todo.component';
     TodosComponent,
     PostsComponent,
     AlbumsComponent,
-    TodoComponent
+    TodoComponent,
+    ItemPostComponent,
+    ItemAlbumComponent
   ],
   imports: [
     BrowserModule,

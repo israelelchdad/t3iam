@@ -12,12 +12,17 @@ export class TodosComponent implements OnInit {
   currentTodo:Todo;
   spanClassValue:string= 'stat'
   divClassValue:string = ''
+  todoi:Todo[];
 
 
-  constructor(public todoSvc:TodoService ) { }
+  constructor(public todoSvc:TodoService ) {
+    
+    
+   }
 
   ngOnInit() {
     this.next()
+    this.todoSvc.getTodos().subscribe(data=> this.todoi=data)
   }
   next(){
      this.spanClassValue= 'stat w8'

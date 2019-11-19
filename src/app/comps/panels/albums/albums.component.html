@@ -1,1 +1,12 @@
-<p>albums works!</p>
+<h1>list album for user</h1>
+
+<div>
+    <ul>
+        <li *ngFor='let a of albums'>
+            <!-- {{a.userId}} <br>
+            {{a.title}} <br> -->
+            <app-item-album [album]="a"></app-item-album> 
+
+        </li>
+    </ul>
+</div>

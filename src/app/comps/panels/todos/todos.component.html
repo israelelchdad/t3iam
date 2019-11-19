@@ -1,4 +1,12 @@
 <div id="tasks" [class]="divClassValue" ></div>
+<ul>
+    <li *ngFor="let t of todoi">
+          {{t.userId}}
+          {{t.title}}
+   </li>
+        
+
+</ul>
 <app-todo [todo]="currentTodo"></app-todo>
 <span [class]="spanClassValue"></span>
 <button (click)="next()">next</button>
